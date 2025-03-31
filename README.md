@@ -26,4 +26,14 @@ To list topics:
 docker exec -it kafka kafka-topics --list --bootstrap-server localhost:9092
 ```
 
+## Additional Setup
+
+To ensure unnecessary files are not tracked by Git, add the following to your `.gitignore` file:
+
+# Ignore Python virtual environments
+venv/
+
+# Ignore Python cache files
+__pycache__/
+
 Now, Kafka and Zookeeper are running in Docker! 🚀
